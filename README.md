@@ -1,6 +1,6 @@
 # CONST keyword usage in C++:
 
-##1-with variables
+## 1-with variables
 
 to make constant variables whose values cannot be changed and they must be initialized in declaration 
 Ex:
@@ -13,11 +13,11 @@ int main
 
 ~~~
 
-##2-with pointers 
+## 2-with pointers 
 
 pointers can be declared using const keyword in two ways
  
-###a)pointer to a const variable
+### a)pointer to a const variable
 Ex:
 ~~~cpp 
 const int* ptr;
@@ -29,7 +29,7 @@ int const* ptr;
 here ptr is a pointer that can point to a const int type variable 
 
 
-###b)const pointer
+### b)const pointer
 
 by placing the const keyword to the right of the astrisk *
 Ex:
@@ -39,7 +39,7 @@ int* const ptr=&x;
 ~~~
 here ptr only and always points to the variable x of type int and it can change the value of x but the pointer itself cannot be changed(always points to the same address)
 
-###c)const pointer of a const variable 
+### c)const pointer of a const variable 
 Ex:
 ~~~cpp 
 const int* const ptr;
@@ -47,12 +47,12 @@ const int* const ptr;
 neither the value of the variable that ptr points to nor the pointer itself can be changed 
 
 
-##3-with class data member
+## 3-with class data member
 
 it is initialized with each object using constructor and once initialized it cannot be changed
 
 
-##4-with class object
+## 4-with class object
 
 declaring an object as const means that its data members cannot be changed
 
@@ -77,7 +77,7 @@ int main()
 
 ~~~
 
-##5-with class's member function
+## 5-with class's member function
 
 const member function cannot modify any data member in an object
 
@@ -113,7 +113,7 @@ int main()
 }
 ~~~
 
-##6-with functions arguments and return types:-
+## 6-with functions arguments and return types:-
 
 Used to make the return type or arguments of a function as const.
 
@@ -126,10 +126,10 @@ return 1;
 
 ~~~
 
-#Ampersand (&) usage in C++:
+# Ampersand (&) usage in C++:
 
 
-##1-declare a reference
+## 1-declare a reference
  
 using & in the left hand side of the declared variable means that you expect to have a reference to the declared type
 
@@ -140,21 +140,21 @@ int& y=x;
 ~~~
 this means that y is the reference of x (points to its address)
 
-##2-get address of a variable 
+## 2-get address of a variable 
 
-####-using & in the right hand side in a variable declaration make this variable a pointer and & is known as address operator
+#### -using & in the right hand side in a variable declaration make this variable a pointer and & is known as address operator
 Ex:
 ~~~cpp 
 int x=1;
 int* ptr=&x;
 ~~~
-####-using & in front of a variable will return the address of the variable
+#### -using & in front of a variable will return the address of the variable
 Ex:
 ~~~cpp 
 int x=1;
 std::cout<<&x;      //print address of x
 ~~~
-##3-a bitwise operator
+## 3-a bitwise operator
 it is an infix operator taking two numbers as inputs and doing an AND on each of the bit pairs of the inputs.
 
 Ex:
